@@ -8,7 +8,8 @@ h1{
 
 
 .inp{
-    width: 4%;
+    width: 50px;
+    height: 50px;
     text-align: center;
 }
 
@@ -18,7 +19,7 @@ h1{
 }
 
 .row{
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 10px;
 }
 
