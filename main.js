@@ -13,7 +13,7 @@ function clik(){
 		document.getElementById("game").style.display = "block";
 	}
 	document.getElementById("titl").innerHTML="Tic Tac Toe";
-	document.getElementById("print").innerHTML=document.getElementById("box1").value+" Turn"
+	document.getElementById("print").innerHTML=document.getElementById("box1").value+" Turn";
 
 	}
 	
