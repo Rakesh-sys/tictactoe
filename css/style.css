@@ -5,6 +5,11 @@ h1{
 .a{
     padding: 0 0;
 }
+h3{
+    display: inline;
+}
+
+
 
 
 .inp{
@@ -30,3 +35,13 @@ h1{
 p{
     font-size: small;
 }
+
+.inp1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.inpb{
+    padding-top: 20px;
+}
+

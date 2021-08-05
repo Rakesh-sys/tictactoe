@@ -4,34 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My TicTacToe Game</title>
+    <title> My Tictactoe Game</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section class="tic">
-        <h1>Tic Tac Toe</h1>
-        <div class="row">
-            <div class="col col-12">
-                <input class="inp" id="b1" type="text" onclick ="myfunc_3(); myfunc();" readonly>
-                <input class="inp" id="b2" type="text" onclick="myfunc_4(); myfunc();" readonly>
-                <input class="inp" id="b3" type="text" onclick="myfunc_5(); myfunc();" readonly>
+        <h1 id="titl">Welcome To My Tic Tac Toe</h1>
+        <div id="hed">
+            <div class="hd row">
+                <div class="inp1 col col-12">
+                   Player 1:    <input type="text" name="" id="box1" required>
+                </div>
+                <div class="inp1 col col-12">
+                    Player 2:   <input type="text" name="" id="box2" required>
+                </div>
+                    
+                <div class="inpb col col-12">
+                    <button class="btn btn-primary" onclick="clik()">Start Game</button>
+                    
+                </div>
             </div>
-            <div class="col col-12">
-                <input class="inp" id="b4" type="text" onclick="myfunc_6(); myfunc();" readonly>
-                <input class="inp" id="b5" type="text" onclick="myfunc_7(); myfunc();" readonly>
-                <input class="inp" id="b6" type="text" onclick="myfunc_8(); myfunc();" readonly>
-            </div>
-            <div class="col col-12">
-                <input class="inp" id="b7" type="text" onclick="myfunc_9(); myfunc();" readonly>
-                <input class="inp" id="b8" type="text" onclick="myfunc_10(); myfunc();" readonly>
-                <input class="inp" id="b9" type="text" onclick="myfunc_11(); myfunc();" readonly>
-            </div>
-            
-
         </div>
-        <p id="print"> Start The Game </p>
-        <button class="btn btn-primary" id="but" onclick="myfunc_2()"> Reset </button>
+        <div id="game" >
+            <div class="row">
+                <div class="col col-12">
+                    <input class="inp" id="b1" type="text" onclick ="myfunc_3(); myfunc();"   readonly>
+                    <input class="inp" id="b2" type="text" onclick="myfunc_4(); myfunc();"   readonly>
+                    <input class="inp" id="b3" type="text" onclick="myfunc_5(); myfunc();"   readonly>
+                </div>
+                <div class="col col-12">
+                    <input class="inp" id="b4" type="text" onclick="myfunc_6(); myfunc();"   readonly>
+                    <input class="inp" id="b5" type="text" onclick="myfunc_7(); myfunc();"   readonly>
+                    <input class="inp" id="b6" type="text" onclick="myfunc_8(); myfunc();"   readonly>
+                </div>
+                <div class="col col-12">
+                    <input class="inp" id="b7" type="text" onclick="myfunc_9(); myfunc();"   readonly>
+                    <input class="inp" id="b8" type="text" onclick="myfunc_10(); myfunc();"   readonly>
+                    <input class="inp" id="b9" type="text" onclick="myfunc_11(); myfunc();"   readonly>
+                </div>
+                
+    
+            </div>
+            <p id="print"> Start The Game </p>
+            <button class="btn btn-primary" id="but" onclick="myfunc_2()"> Reset </button>
+        </div>
+        
     </section>
     <script src="main.js"></script>
 </body>

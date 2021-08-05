@@ -1,3 +1,24 @@
+var b = document.getElementById("game");
+b.style.display = "none";
+
+function clik(){
+	if (document.getElementById("box1").value.trim()=="" || document.getElementById("box2").value.trim()==""){
+		alert("Please enter name of players.");
+	}
+
+	else{
+		var a=document.getElementById("hed");
+		a.style.display = "none";
+		if (document.getElementById("game").style.display = "none"){
+		document.getElementById("game").style.display = "block";
+	}
+	document.getElementById("titl").innerHTML="Tic Tac Toe";
+	document.getElementById("print").innerHTML=document.getElementById("box1").value+" Turn"
+
+	}
+	
+	
+}
 // Function called whenever user tab on any box
 function myfunc() {
 
@@ -230,11 +251,11 @@ function myfunc() {
 		// Here, Printing Result
 		if (flag == 1) {
 			document.getElementById('print')
-				.innerHTML = "Player X Turn";
+				.innerHTML =document.getElementById("box1").value+ " Turn";
 		}
 		else {
 			document.getElementById('print')
-				.innerHTML = "Player 0 Turn";
+				.innerHTML = document.getElementById("box2").value+ " Turn";
 		}
 	}
 }
